@@ -1,0 +1,218 @@
+@media(max-width:575.98px) {
+
+    .navbar-brand img {
+        width: 70px;
+    }
+
+    .navbar-toggler span {
+        font-size: 25px;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .navbar-collapse {
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .navbar button {
+        width: 40px;
+    }
+
+    .py {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bg-home h1,
+    .is-visible {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .hero a {
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .program {
+        margin-left: 0%;
+        padding-left: 0px;
+    }
+
+    .program-button {
+        width: 350px;
+        height: 65px;
+        border-radius: 60px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .margintop {
+        margin-top: 60px;
+    }
+
+    .flip-text h4 {
+        font-size: 34px;
+    }
+
+    .flip-text {
+        top: 16px;
+        left: 48%;
+    }
+
+    .fitit-box h2 {
+        font-size: 22px;
+    }
+
+    .fitit-box p {
+        font-size: 15px;
+    }
+
+    .fill {
+        font-size: 20px;
+    }
+
+    .in-put {
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #ffffff;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 10px 26px;
+    }
+
+    .owl-nav button.owl-prev {
+        left: 45%;
+    }
+
+    .owl-nav button.owl-next {
+        right: 45%;
+    }
+
+    .card {
+        width: 345px;
+        height: 300px;
+        margin: 5px;
+        top: 50%;
+        background-color: #ccffcf;
+    }
+
+    .title-small h6 {
+        font-weight: 600;
+        font-size: 18px;
+        color: #515151;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .owl-nav span {
+        font-size: 50px;
+        position: relative;
+        top: 140px;
+    }
+
+    .f-img-bg img {
+        width: 200px;
+    }
+
+    .contact-us h2 {
+        font-size: 45px;
+    }
+
+    .bg-home h1 {
+        margin-bottom: 0;
+        padding-right: 70px;
+        font-size: 25px;
+    }
+
+    .newthing {
+        background-color: #fff;
+        border-radius: 100%;
+        color: #5bb763;
+        position: relative;
+        display: flex;
+        margin-right: 25px;
+        line-height: 50px;
+        font-size: 18px !important;
+        align-items: center;
+        margin-left: 0;
+        height: 50px;
+        width: 50px;
+        bottom: 119;
+        margin-left: 150;
+        justify-content: center;
+    }
+
+    .newthing-1 {
+        margin-left: 0;
+        height: 50px;
+        width: 50px;
+        bottom: 150;
+        margin-left: 160px;
+
+    }
+
+    .section-title h6 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .single-counter h2 {
+        font-size: 35px;
+    }
+
+
+    .blog .video-btn a {
+        left: 32%;
+    }
+
+    .blog .video-btn a {
+        position: absolute;
+        right: 0;
+        display: table;
+        top: 110%;
+        transform: translateY(-50%) translateX(-50%);
+        text-align: center;
+        z-index: 3;
+    }
+
+    .knee-pain ul li {
+        margin-left: 40px;
+    }
+
+    .ply1 img {
+        width: 370px;
+    }
+
+    #fwg-owl .owl-nav span {
+        font-size: 50px;
+        top: 91px;
+    }
+
+    .bg-color {
+        background-color: #dfdfdf;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
