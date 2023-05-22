@@ -129,7 +129,7 @@ h1 {
 }
 
 .bg-home {
-  background-image: url(/spinax/images/main-img.png) !important;
+  background-image: url(/images/main-img.webp) !important;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -613,6 +613,7 @@ footer img {
 .counter-area {
   position: relative;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .pb-70 {
@@ -1002,6 +1003,10 @@ a {
   height: 500px;
 }
 
+a{
+  text-decoration: none !important; 
+
+}
 
 .float-button {
   text-decoration: none;
@@ -1176,6 +1181,18 @@ a {
   font-size: 20px;
 }
 
+.btn-start-2 {
+  background-color: transparent;
+  border: 2px solid #52a955;
+  color: #52a955;
+}
+
+.btn-start-2:hover {
+  background-color: #47924a;
+  border-color: #52a955;
+  color: #fff;
+}
+
 .link-animated a {
   transition: .5s;
 }
@@ -1197,7 +1214,6 @@ a {
   transition: .5s;
   border-radius: 10px;
   height: 232px;
-  width: 340px;
 
 }
 
@@ -1205,21 +1221,16 @@ a {
   padding: 5px;
 }
 
-a {
-  text-decoration: none;
-}
-
-
 .blog-item {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
 }
 
-.blog-item h4:hover {
-  color: #2dc21f;
+.blog-item p{
+  color: #000;
 }
 
-.blog-item a:hover {
+.blog-item h4:hover {
   color: #2dc21f;
 }
 

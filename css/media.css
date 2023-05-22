@@ -53,7 +53,7 @@
     }
 
     .program-button {
-        width: 350px;
+        width: 300px;
         height: 65px;
         border-radius: 60px;
         font-size: 18px;
@@ -121,10 +121,22 @@
         margin-bottom: 10px;
     }
 
+    #owl-prep-2 .owl-nav span {
+        top: 200;
+    }
+
     .owl-nav span {
-        font-size: 50px;
         position: relative;
-        top: 140px;
+        font-size: 50px;
+        top: 170px;
+    }
+
+    #owl-insta-2 .owl-nav span {
+        top: 90;
+    }
+
+    #achievement .owl-nav span {
+        top: 270;
     }
 
     .f-img-bg img {
@@ -163,8 +175,8 @@
         margin-left: 0;
         height: 50px;
         width: 50px;
-        bottom: 150;
-        margin-left: 160px;
+        bottom: 133;
+        margin-left: 137px;
 
     }
 
@@ -198,7 +210,8 @@
     }
 
     .ply1 img {
-        width: 370px;
+        width: 330px;
+        margin-right: 20px;
     }
 
     #fwg-owl .owl-nav span {
@@ -208,6 +221,23 @@
 
     .bg-color {
         background-color: #dfdfdf;
+    }
+
+    .blog-h1 {
+        font-size: 30px;
+    }
+
+    .blog-heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .blog-item {
+        margin-bottom: 30px;
+    }
+
+    .counter-area {
+        padding-top: 50px;
     }
 }
 
