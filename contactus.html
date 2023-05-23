@@ -2,9 +2,13 @@
 
 <head>
     <meta charset="utf-8">
+    <title>Contact-us</title>
+    <meta name="Description" content="">
     <title>Contact Us - Reach Out for Your Queries and Concerns</title>
-    <meta name="Description" content="Contact Spinex Global Physiotherapy Clinic for any queries or concerns. Book an appointment with our expert sports physiotherapist and experience our specialized services for injury recovery and pain management.">
-    <meta name="keywords" content=" contact us, Spinex Global Physiotherapy Clinic, physiotherapy services, injury recovery, pain management, sports physiotherapist">
+    <meta name="Description"
+        content="Contact Spinex Global Physiotherapy Clinic for any queries or concerns. Book an appointment with our expert sports physiotherapist and experience our specialized services for injury recovery and pain management.">
+    <meta name="keywords"
+        content=" contact us, Spinex Global Physiotherapy Clinic, physiotherapy services, injury recovery, pain management, sports physiotherapist">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/webp" href="./images/spinex.webp">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
@@ -23,6 +27,27 @@
     <script type="text/javascript" src="/js/lazy-load.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script type="text/javascript">
+    function openside() {
+        document.getElementById('demo').style.width = '100%';
+    }
+
+    function sideclose() {
+        document.getElementById('demo').style.width = '0px';
+    }
+</script>
+<script type="text/javascript">
+    /*---------------------Drop down----------------------*/
+    $(document).ready(function () {
+        $('.ddmenu > a').click(function () {
+            $(this).parent().siblings().find('ul').fadeOut(500);
+            $(this).next('ul').stop(true, false, true).fadeToggle(500);
+            return false;
+        });
+    });
+
+    /*---------------------End----------------------*/
+</script>
 
 <body>
     <a class="float-button" target="_blank"
@@ -51,7 +76,7 @@
                 <ul>
                     <li>
                         <a href="/index.html">
-                            <p class="m-0 ">Home</p>
+                            <p class="m-0 active">Home</p>
                         </a>
                     </li>
                     <li>
@@ -66,7 +91,7 @@
                     </li>
                     <li>
                         <a href="/contactus.html">
-                            <p class="m-0 active">Contact</p>
+                            <p class="m-0">Contact</p>
                         </a>
                     </li>
                 </ul>
@@ -81,14 +106,8 @@
                 <ul class="mobileUserInfo aa">
                 </ul>
             </div>
-            <span class="d-lg-none mt-5 d-sm-block btnn"
-                style="cursor: pointer; margin-right: 300px; font-size: 25px; color: rgb(255, 255, 255);"
-                onclick="openside()">&#9776;</span>
-            <div class="login d-lg-block d-none">
-                <ul>
-                    <li style="font-size: 18px;" class="ddmenu userInfo"></li>
-                </ul>
-            </div>
+            <span class="d-lg-none d-sm-block btnn" style="cursor: pointer;font-size: 20px;color: white;"
+                onclick="openside()">☰</span>
         </div>
     </header>
     <section>
@@ -131,8 +150,8 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div
-                    class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center margintop">
+                <div class="row d-flex justify-content-lg-between justify-content-md-center 
+                    justify-content-sm-center margintop">
                     <div class="col-md-6 col-sm-12 col-lg-6 align-items-center">
                         <div class="w-100 img-wrap contect text-dark  contect-getintouch">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
@@ -157,7 +176,6 @@
                     </div>
                     <div class="col-md-6 col-sm-12 col-lg-6 ">
                         <div class="w-100 mb-5  contect-getintouch">
-
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-dark mb-0 ">Get In Touch</h3>
                             </div>
@@ -177,13 +195,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container-fluid f-img-bg text-light">
             <div class="container">
                 <div class="row gx-5">
                     <div class="col-lg-4 col-md-6 footer-about">
-                        <div class="d-flex flex-column align-items-center justify-content-center text-left h-100  p-4">
+                        <div
+                            class="d-flex flex-column align-items-center justify-content-center text-left h-100 p-0 pt-4 p-md-4">
                             <a href="/index.html" class="navbar-brand">
                                 <img src="/images/spinex.webp" alt="">
                             </a>
@@ -301,9 +322,9 @@
 
     <script src="./js/jquery.flashy.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+    <link href="./css/flashy.min.css" rel="stylesheet">
     <link href="./css/effect.css" rel="stylesheet">
     <script src="./js/main.js"></script>
-    <link href="./css/flashy.min.css" rel="stylesheet">
     <script src="./js/owl.carousel.js"></script>
 
     <script>
