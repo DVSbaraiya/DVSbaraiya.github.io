@@ -20,6 +20,28 @@
     <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../js/owl.carousel.js"></script>
     <script type="text/javascript" src="../js/lazy-load.js"></script>
+    <script type="text/javascript">
+        function openside() {
+            document.getElementById('demo').style.width = '100%';
+        }
+
+        function sideclose() {
+            document.getElementById('demo').style.width = '0px';
+        }
+    </script>
+    <script type="text/javascript">
+        /*---------------------Drop down----------------------*/
+        $(document).ready(function () {
+            $('.ddmenu > a').click(function () {
+                $(this).parent().siblings().find('ul').fadeOut(500);
+                $(this).next('ul').stop(true, false, true).fadeToggle(500);
+                return false;
+            });
+        });
+
+        /*---------------------End----------------------*/
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,22 +51,66 @@
         <span class="">Message<span>
     </a>
     <!--header-->
-    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3  py-lg-0" id="myHeader">
-        <a href="../index.html" class="navbar-brand p-0">
-            <img src="../images/spinex.webp" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" onclick="Navebartoggle()">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myLinks">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="../index.html" class="nav-item nav-link active">Home</a>
-                <a href="../aboutus.html" class="nav-item nav-link ">About</a>
-                <a href="../Blog.html" class="nav-item nav-link ">Blog</a>
-                <a href="../contact.html" class="nav-item nav-link">Contact</a>
+    <header>
+        <div class="container-fluid main p-0 m-0">
+            <div class="d-lg-block d-none log">
+                <a href="/">
+                    <div>
+                        <img src="/images/spinex.webp" width="150%" alt="Fg Group">
+                    </div>
+                </a>
+            </div>
+            <div class="d-lg-none d-sm-block t0 log1">
+                <a href="/">
+                    <div>
+                        <img src="/images/spinex.webp" width="150%" alt="Fg Group">
+                    </div>
+                </a>
+            </div>
+            <div class="lang">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <p class="m-0">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/aboutus.html">
+                            <p class="m-0">About Us</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog.html">
+                            <p class="m-0">Blog</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contactus.html">
+                            <p class="m-0">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side" id="demo">
+                <span class="closebtn" onclick="sideclose()">&times</span>
+                <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="/images/spinex.webp" width="35%"></a>
+                <a href="/index.html">Home</a>
+                <a href="/aboutus.html">About Us</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contactus.html">Contact</a>
+                <ul class="mobileUserInfo aa">
+                </ul>
+            </div>
+            <span class="d-lg-none mt-5 d-sm-block btnn"
+                style="cursor: pointer; margin-right: 300px; font-size: 25px; color: rgb(255, 255, 255);"
+                onclick="openside()">&#9776;</span>
+            <div class="login d-lg-block d-none">
+                <ul>
+                    <li style="font-size: 18px;" class="ddmenu userInfo"></li>
+                </ul>
             </div>
         </div>
-    </nav>
+    </header>
     <section class="">
         <div class="container">
             <div class="section-title text-center position-relative pb-3 pt-5 mx-auto" style="max-width: 600px;">
@@ -85,7 +151,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-2">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/osteoarthritis.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/osteoarthritis.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-1">
@@ -105,7 +171,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-1">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/hip-fracture.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/hip-fracture.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-2">
@@ -123,7 +189,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-2">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/hip-bursitis.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/hip-bursitis.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-1">
@@ -143,7 +209,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-1">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/hip-tendonitis.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/hip-tendonitis.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-2">
@@ -163,7 +229,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-2">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/hip-labral-tear.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/hip-labral-tear.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-1">
@@ -182,7 +248,7 @@
             <div class="row d-flex justify-content-lg-between justify-content-md-center justify-content-sm-center">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-items-center order-lg-1">
                     <div class="w-100 img-wrap knee-pain">
-                        <img class="img-fluid" src="../images/pains/hip/hip-impingement.webp" style="">
+                        <img class="img-fluid" src="../images/pains/hip/hip-impingement.webp">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6 knee-pain order-lg-2">
@@ -446,65 +512,120 @@
     <section>
         <div class="container-fluid bg-light">
             <div class="container py-lg-5 py-3">
-                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <div class="section-title text-center position-relative pb-3 mb-lg-5 mx-auto" style="max-width: 600px;">
 
                     <h2 class="mb-0">
                         Best Program For Your Recovery</h2>
                     <h6 class="fw-bold text-color text-uppercase">Explore our extensive collection of 50+ programs
                         designed from specialist physiotherapists.</6>
                 </div>
-                <div class="row g-5">
-                    <div class="col-lg-6">
-                        <div class="row g-5 program">
-                            <div class="col-12  col-sm-12">
-                                <a href="shoulder.html">
+                <div class="d-none d-md-block">
+                    <div class="row g-5">
+                        <div class="col-lg-6">
+                            <div class="row g-5 program">
+                                <div class="col-12  col-sm-12">
+                                    <a href="/programs/shoulder.html">
+                                        <div class="program-button d-flex align-items-center mb-3">
+                                            <img src="/images/Shoulder.png" class="ml-2" alt="">
+                                            <p>Shoulder</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12  col-sm-12">
+                                    <a href="/programs/knee.html">
+                                        <div class="program-button d-flex align-items-center  mb-3">
+                                            <img src="/images/Knee.webp" class="ml-1" alt="">
+                                            <p>Knee</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12  col-sm-12">
+                                    <a href="/programs/hip.html">
+                                        <div class="program-button d-flex align-items-center  mb-3">
+                                            <img src="/images/Hip.png" class="ml-2" alt="">
+                                            <p>Hip</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row g-5">
+                                <div class="col-12 col-sm-12">
+                                    <a href="/programs/nack.html">
+                                        <div class="program-button d-flex align-items-center  mb-3">
+                                            <img src="/images/Neck.png" alt="">
+                                            <p>Neck</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12  col-sm-12">
+                                    <a href="/programs/back.html">
+                                        <div class="program-button d-flex align-items-center  mb-3">
+                                            <img src="/images/Back.webp" class="ml-2" alt="">
+                                            <p>Back</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <a href="/programs/elbow.html">
+                                        <div class="program-button d-flex align-items-center  mb-3">
+                                            <img src="/images/Elbow.webp" alt="">
+                                            <p>Elbow</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div class="col-12 p-0">
+                        <div class="g-5 program">
+                            <div class="col-12 col-sm-12">
+                                <a href="/programs/shoulder.html">
                                     <div class="program-button d-flex align-items-center mb-3">
-                                        <img src="../images/Shoulder.png" class="ml-2" alt="">
-                                        <p>Shoulder</p>
+                                        <img src="/images/Shoulder.png" class="ml-2" alt="">
+                                        <p style="margin-left: 50px;">Shoulder</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-12  col-sm-12">
-                                <a href="knee.html">
+                                <a href="/programs/knee.html">
                                     <div class="program-button d-flex align-items-center  mb-3">
-                                        <img src="../images/Knee.webp" class="ml-1" alt="">
+                                        <img src="/images/Knee.webp" class="ml-1" alt="">
                                         <p>Knee</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-12  col-sm-12">
-                                <a href="hip.html">
+                                <a href="/programs/hip.html">
                                     <div class="program-button d-flex align-items-center  mb-3">
-                                        <img src="../images/Hip.png" class="ml-2" alt="">
+                                        <img src="/images/Hip.png" class="ml-2" alt="">
                                         <p>Hip</p>
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="row g-5">
                             <div class="col-12 col-sm-12">
-                                <a href="nack.html">
+                                <a href="/programs/nack.html">
                                     <div class="program-button d-flex align-items-center  mb-3">
-                                        <img src="../images/Neck.png" alt="">
+                                        <img src="/images/Neck.png" alt="">
                                         <p>Neck</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-12  col-sm-12">
-                                <a href="back.html">
+                                <a href="/programs/back.html">
                                     <div class="program-button d-flex align-items-center  mb-3">
-                                        <img src="../images/Back.webp" class="ml-2" alt="">
+                                        <img src="/images/Back.webp" class="ml-2" alt="">
                                         <p>Back</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-12 col-sm-12">
-                                <a href="elbow.html">
+                                <a href="/programs/elbow.html">
                                     <div class="program-button d-flex align-items-center  mb-3">
-                                        <img src="../images/Elbow.webp" alt="">
+                                        <img src="/images/Elbow.webp" alt="">
                                         <p>Elbow</p>
                                     </div>
                                 </a>
@@ -625,13 +746,13 @@
 
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-envelope text-color mr-2 mt-1"></i>
-                                    <a href="mailto: drnirajbhansali@gmail.com" class="mb-0">
+                                    <a href="mailto:drnirajbhansali@gmail.com">
                                         <p>drnirajbhansali@gmail.com</p>
                                     </a>
                                 </div>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-phone-alt text-color mr-2 mt-1"></i>
-                                    <a href="" class="mb-0">
+                                    <a href="tel:8000200063">
                                         <p>+91 80002 00063</p>
                                     </a>
                                 </div>
@@ -648,6 +769,9 @@
                                     <a class="btn btn-primary btn-square m-1 py-2 footer-icon"
                                         href="https://instagram.com/spinex.global?igshid=NTc4MTIwNjQ2YQ==">
                                         <i class="fab fa-instagram fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square m-1 py-2 footer-icon"
+                                        href="https://www.youtube.com/@spinex.global4010/featured">
+                                        <i class="fab fa-youtube fw-normal"></i></a>
                                 </div>
                             </div>
                         </div>
