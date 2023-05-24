@@ -32,6 +32,27 @@
         function sideclose() {
             document.getElementById('demo').style.width = '0px';
         }
+        $(document).ready(function () {
+            $("#owl-demo-team").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+        $("#owl-demo-team-1").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                margin: 10,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+        });
     </script>
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
@@ -675,10 +696,13 @@
                         <div class="item m-1 m-md-3 mb-md-4 mb-3">
                             <div class="team-item bg-color rounded overflow-hidden">
                                 <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-3.jpeg" alt="">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-1.webp" alt="">
+                                    <div class="team-social">
+                                        
+                                    </div>
                                 </div>
                                 <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Ridhdhi Dabhoya</h4>
+                                    <h4 class="text-color">Dr. Lijo Varghese</h4>
                                     <p class="text-uppercase m-0">HOD Adajan</p>
                                 </div>
                             </div>
@@ -686,45 +710,89 @@
                         <div class="item m-1 m-md-3 mb-md-4 mb-3">
                             <div class="team-item bg-color rounded overflow-hidden">
                                 <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-2.jpeg" alt="">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-2.webp" alt="">
+                                    <div class="team-social"></div>
                                 </div>
                                 <div class="text-center py-4">
-                                    <h4 class="text-color">Mrs. Armi Jiyani</h4>
-                                    <p class="text-uppercase m-0"> Receptionist Adajan</p>
+                                    <h4 class="text-color">Dr. Rinal Kahar</h4>
+                                    <p class="text-uppercase m-0"> HOD of Ghod Dod Road branch</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item m-1 m-md-3 mb-md-4 mb-3">
                             <div class="team-item bg-color rounded overflow-hidden">
                                 <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/dr.niraj-bhansali.webp"
-                                        alt="">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-3.webp" alt="">
                                 </div>
                                 <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Shipra Naik</h4>
-                                    <p class="text-uppercase m-0"> HOD Adajan</p>
+                                    <h4 class="text-color">Dr. Shefali Bodhana </h4>
+                                    <p class="text-uppercase m-0">  CFO of Ghod Dod Branch</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item m-1 m-md-3 mb-md-4 mb-3">
                             <div class="team-item bg-color rounded overflow-hidden">
                                 <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-1.jpeg" alt="">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-4.webp" alt="">
                                 </div>
                                 <div class="text-center py-4">
-                                    <h4 class="text-color">Miss Sonali Patel</h4>
-                                    <p class="text-uppercase m-0"> Receptionist Adajan</p>
+                                    <h4 class="text-color">Dr. Asha Yadav</h4>
+                                    <p class="text-uppercase m-0"> HOD of Ghod Dod branch</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item m-1 m-md-3 mb-md-4 mb-3">
                             <div class="team-item bg-color rounded overflow-hidden">
                                 <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-5.jpeg" alt="">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-5.webp" alt="">
                                 </div>
                                 <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Kinjal Chovatiya</h4>
-                                    <p class="text-uppercase m-0"> Executive Coordinator Adajan</p>
+                                    <h4 class="text-color">Dr. Riddhi Pagda</h4>
+                                    <p class="text-uppercase m-0"> Head of Home Visit Module</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                            <div class="team-item bg-color rounded overflow-hidden">
+                                <div class="team-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-6.webp" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <h4 class="text-color">Dr. Brijal  Gadher  </h4>
+                                    <p class="text-uppercase m-0"> HOD of home visit module</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                            <div class="team-item bg-color rounded overflow-hidden">
+                                <div class="team-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-7.webp" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <h4 class="text-color">Dr. Sharvari Joshi</h4>
+                                    <p class="text-uppercase m-0">Dry Needling </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                            <div class="team-item bg-color rounded overflow-hidden">
+                                <div class="team-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-8.webp" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <h4 class="text-color">Dr. Kinjal Gajera</h4>
+                                    <p class="text-uppercase m-0"> Yoga certificate course</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                            <div class="team-item bg-color rounded overflow-hidden">
+                                <div class="team-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="./images/team-member/doctor-9.webp" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <h4 class="text-color">Dr. Sahista Shaikh</h4>
+                                    <p class="text-uppercase m-0"> Dry Needling</p>
                                 </div>
                             </div>
                         </div>
