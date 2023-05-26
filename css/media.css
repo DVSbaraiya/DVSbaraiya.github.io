@@ -250,14 +250,14 @@
   }
 }
 
-@media (min-width:576px) and (max-width:767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .main {
     height: 60px;
   }
 
   .lang {
     display: none;
-    margin-top: 30px
+    margin-top: 30px;
   }
 
   .lang ul li {
@@ -265,11 +265,11 @@
     text-align: left;
     background-color: #fff;
     margin-right: 0;
-    padding-left: 15px
+    padding-left: 15px;
   }
 
   .lang ul li a {
-    color: #ffffff
+    color: #ffffff;
   }
 
   h2 {
@@ -298,7 +298,7 @@
 
   .hero a {
     padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
   }
@@ -438,7 +438,6 @@
     width: 50px;
     bottom: 133;
     margin-left: 137px;
-
   }
 
   .section-title h6 {
@@ -450,7 +449,6 @@
   .single-counter h2 {
     font-size: 35px;
   }
-
 
   .blog .video-btn a {
     left: 32%;
@@ -510,7 +508,7 @@
 
   .lang {
     display: none;
-    margin-top: 30px
+    margin-top: 30px;
   }
 
   .lang ul li {
@@ -518,11 +516,11 @@
     text-align: left;
     background-color: #fff;
     margin-right: 0;
-    padding-left: 15px
+    padding-left: 15px;
   }
 
   .lang ul li a {
-    color: #ffffff
+    color: #ffffff;
   }
 
   h2 {
@@ -551,7 +549,7 @@
 
   .hero a {
     padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
   }
@@ -685,7 +683,6 @@
     width: 50px;
     bottom: 133;
     margin-left: 137px;
-
   }
 
   .section-title h6 {
@@ -697,7 +694,6 @@
   .single-counter h2 {
     font-size: 35px;
   }
-
 
   .blog .video-btn a {
     left: 32%;
@@ -754,29 +750,11 @@
   .row {
     margin-left: 0;
   }
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .main {
     height: 60px;
-  }
-
-  .lang {
-    display: none;
-    margin-top: 30px
-  }
-
-  .lang ul li {
-    width: 100%;
-    text-align: left;
-    background-color: #fff;
-    margin-right: 0;
-    padding-left: 15px
-  }
-
-  .lang ul li a {
-    color: #ffffff
   }
 
   h2 {
@@ -805,7 +783,7 @@
 
   .hero a {
     padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
   }
@@ -961,7 +939,6 @@
   .newthing-1 {
     bottom: 158;
     margin-left: 165px;
-
   }
 
   .section-title h6 {
@@ -973,7 +950,6 @@
   .single-counter h2 {
     font-size: 35px;
   }
-
 
   .blog .video-btn a {
     left: 32%;
