@@ -1008,20 +1008,21 @@
                             <div class="mb-4">
                                 <h4 class="fill">Fill The Form :-</h4>
                             </div>
-                            <form action="" class="mb-0">
+                            <form action="javascript:sendmail()" class="mb-0">
                                 <div>
-                                    <input type="text" placeholder="Name" class="form-control in-put">
+                                    <input type="text" placeholder="Name" id="Name" class="form-control in-put">
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Email" class="form-control in-put">
+                                    <input type="text" placeholder="Email" id="Sender" class="form-control in-put">
                                 </div>
                                 <div>
-                                    <input type="number" placeholder="Mobile" class="form-control in-put">
+                                    <input type="number" placeholder="Mobile" id="Number" class="form-control in-put">
                                 </div>
                                 <div>
-                                    <textarea name="massages" placeholder="Massages" class="in-put"></textarea>
+                                    <textarea name="massages" placeholder="Massages" id="Message"
+                                        class="in-put"></textarea>
                                 </div>
-                                <button type="button" class="submit-btn">Submit</button>
+                                <button type="submit" class="submit-btn">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -1161,14 +1162,59 @@
                     </div>
                 </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./js/jquery.flashy.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link href="./css/flashy.min.css" rel="stylesheet">
     <link href="./css/effect.css" rel="stylesheet">
     <script src="./js/owl.carousel.js"></script>
 
+
+    <script>
+
+        function sendmail() {
+
+            var name = $('#Name').val();
+            var email = $('#Sender').val();
+            var subject = $('#Number').val();
+            var message = $('#Message').val();
+
+            // var body = $('#body').val();
+
+            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+            //console.log(name, phone, email, message);
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "avadhvanpariya1608@gmail.com",
+                Password : "avadhvanpariya1608#8",
+                To: 'avadhvanpariya1608@gmail.com',
+                From: email,
+                Subject: "New message on contact from " + name,
+                Body: message
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        alert('Your mail has been send. Thank you for connecting.');
+                    }
+                    else {
+                        console.error(message);
+                        alert('There is error at sending message.')
+
+                    }
+
+                }
+            );
+
+
+
+        }
+
+
+    </script>
     <script>
         $(window).on('load', function () {
             $(".loder").fadeOut(3000);
