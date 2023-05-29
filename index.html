@@ -24,6 +24,9 @@
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/owl.carousel.js"></script>
     <script type="text/javascript" src="./js/lazy-load.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
     <script type="text/javascript">
         function openside() {
             document.getElementById('demo').style.width = '100%';
@@ -1008,7 +1011,7 @@
                             <div class="mb-4">
                                 <h4 class="fill">Fill The Form :-</h4>
                             </div>
-                            <form action="javascript:sendmail()" class="mb-0">
+                            <form class="mb-0">
                                 <div>
                                     <input type="text" placeholder="Name" id="Name" class="form-control in-put">
                                 </div>
@@ -1019,10 +1022,10 @@
                                     <input type="number" placeholder="Mobile" id="Number" class="form-control in-put">
                                 </div>
                                 <div>
-                                    <textarea name="massages" placeholder="Massages" id="Message"
+                                    <textarea name="messages" placeholder="Messages" id="Message"
                                         class="in-put"></textarea>
                                 </div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="button" class="submit-btn" onclick="sendMail()">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -1162,6 +1165,7 @@
                     </div>
                 </div>
     </footer>
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./js/jquery.flashy.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
@@ -1169,51 +1173,55 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link href="./css/flashy.min.css" rel="stylesheet">
     <link href="./css/effect.css" rel="stylesheet">
+    <script src="./js/sweetalert2.js"></script>
     <script src="./js/owl.carousel.js"></script>
 
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("OqU-2F2WKPuPs68B9");
+        })();
+    </script>
 
     <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById("Name").value,
+                email_id: document.getElementById("Sender").value,
+                mobile: document.getElementById("Number").value,
+                message: document.getElementById("Message").value
+            };
 
-        function sendmail() {
+            const serviceID = "service_r6qpg89";
+            const templateID = "template_r6tz9nn";
 
-            var name = $('#Name').val();
-            var email = $('#Sender').val();
-            var subject = $('#Number').val();
-            var message = $('#Message').val();
+            emailjs.send(serviceID, templateID, params)
+                .then(function (response) {
+                    document.getElementById("Name").value = "";
+                    document.getElementById("Sender").value = "";
+                    document.getElementById("Number").value = "";
+                    document.getElementById("Message").value = "";
 
-            // var body = $('#body').val();
-
-            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
-            //console.log(name, phone, email, message);
-
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "avadhvanpariya1608@gmail.com",
-                Password : "avadhvanpariya1608#8",
-                To: 'avadhvanpariya1608@gmail.com',
-                From: email,
-                Subject: "New message on contact from " + name,
-                Body: message
-            }).then(
-                message => {
-                    //console.log (message);
-                    if (message == 'OK') {
-                        alert('Your mail has been send. Thank you for connecting.');
-                    }
-                    else {
-                        console.error(message);
-                        alert('There is error at sending message.')
-
-                    }
-
-                }
-            );
-
-
-
+                    console.log("Email sent successfully", response.status, response.text);
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thanks you for contact us',
+                        text: 'We will contact you soon.'
+                    })
+                    return false;
+                    // alert("Your message has been sent successfully!");
+                })
+                .catch(function (error) {
+                    console.error("Error sending email", error);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Invalid cerdinatiol',
+                        text: 'Please enter valid email, name, mobile'
+                    })
+                    return false;
+                    // alert("There was an error sending your message. Please try again later.");
+                });
         }
-
-
+    </script>
     </script>
     <script>
         $(window).on('load', function () {
