@@ -78,12 +78,12 @@
                 <ul>
                     <li>
                         <a href="/index.html">
-                            <p class="m-0 active">Home</p>
+                            <p class="m-0 ">Home</p>
                         </a>
                     </li>
                     <li>
                         <a href="/aboutus.html">
-                            <p class="m-0">About Us</p>
+                            <p class="m-0 ">About Us</p>
                         </a>
                     </li>
                     <li>
@@ -93,11 +93,22 @@
                     </li>
                     <li>
                         <a href="/contactus.html">
-                            <p class="m-0">Contact</p>
+                            <p class="m-0 active">Contact</p>
                         </a>
                     </li>
                 </ul>
             </div>
+            <ul class="nav inquiry-m">
+                <li class="nav-item">
+                    <a class="nav-link active phone-number font-weight-normal d-none d-md-block"
+                        href="tel:80002 00063">+9180002 00063</a>
+                </li>
+                <li class="mt-lg-1 d-none d-md-block">
+                    <div class="fwg-affordenle-btn">
+                        <a href="#" onclick="opneform()">Inquiry</a>
+                    </div>
+                </li>
+            </ul>
             <div class="side" id="demo">
                 <span class="closebtn" onclick="sideclose()">&times</span>
                 <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="./images/spinex.webp" width="35%"></a>
@@ -110,6 +121,9 @@
             </div>
             <span class="d-lg-none d-sm-block btnn" style="cursor: pointer;font-size: 20px;color: white;"
                 onclick="openside()">☰</span>
+            <div class="fwg-affordenle-btn">
+                <a href="#" class="d-block d-md-none" onclick="opneform()">Inquiry</a>
+            </div>
         </div>
     </header>
     <section>

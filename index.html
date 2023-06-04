@@ -119,6 +119,17 @@
                     </li>
                 </ul>
             </div>
+            <ul class="nav inquiry-m">
+                <li class="nav-item">
+                    <a class="nav-link active phone-number font-weight-normal d-none d-md-block"
+                        href="tel:80002 00063">+9180002 00063</a>
+                </li>
+                <li class="mt-lg-1 d-none d-md-block">
+                    <div class="fwg-affordenle-btn">
+                        <a href="#" onclick="opneform()">Inquiry</a>
+                    </div>
+                </li>
+            </ul>
             <div class="side" id="demo">
                 <span class="closebtn" onclick="sideclose()">&times</span>
                 <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="./images/spinex.webp" width="35%"></a>
@@ -131,11 +142,14 @@
             </div>
             <span class="d-lg-none d-sm-block btnn" style="cursor: pointer;font-size: 20px;color: white;"
                 onclick="openside()">☰</span>
+            <div class="fwg-affordenle-btn">
+                <a href="#" class="d-block d-md-none" onclick="opneform()">Inquiry</a>
+            </div>
         </div>
     </header>
     <section class="hero bg-home py" style="margin-top: 60px;">
         <div class="container">
-            <div class="row   ">
+            <div class="row">
                 <div class="col-md-6 col-sm-12 col-lg-6 align-self-center">
                     <div class="w-100 d-none d-md-block">
                         <h1 class="cd-headline clip is-full-width">
@@ -180,8 +194,48 @@
         </div>
     </section>
     <section>
+        <div class="counter-area">
+            <div class="container">
+                <!-- <div class="section-title text-center position-relative pb-3 mb-lg-5 mb-sm-4 mx-auto"
+                    style="max-width: 600px;">
+                    <h2 class="mb-0">Our Achievements</h2>
+                </div> -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6 pb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                        data-aos-duration="1200">
+                        <div class="single-counter"><i class="fas fa-user-md fa-xs"></i>
+                            <h2 id="number1" data-toggle="counter-up">540<span class="target">+</span></h2>
+                            <p>Expert Doctors</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-duration="1200">
+                        <div class="single-counter"><i class="fas fa-check-square fa-xs"></i>
+                            <h2 id="number2" data-toggle="counter-up">990<span class="target">+</span></h2>
+                            <p>Successful Story</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <div class="single-counter"><i class="fas fa-globe-americas fa-xs"></i>
+                            <h2 id="number3" data-toggle="counter-up">3500<span class="traget">+</span></h2>
+                            <p>Surgeries avoided</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                        data-aos-duration="1200">
+                        <div class="single-counter"><i class="fas fa-id-badge fa-xs"></i>
+                            <h2 id="number4" data-toggle="counter-up">54<span class="traget">+</span></h2>
+                            <p>Experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
         <div class="container-fluid">
-            <div class="container pt-md-5">
+            <div class="container">
                 <div class="section-title text-center position-relative pb-3 mb-lg-5 mb-2 mx-auto"
                     style="max-width: 600px;">
                     <h2 class="mb-0 pt-4">
@@ -345,46 +399,13 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="counter-area  pb-70">
-            <div class="container">
-                <div class="section-title text-center position-relative pb-3 mb-lg-5 mb-sm-4 mx-auto"
-                    style="max-width: 600px;">
-                    <h2 class="mb-0">Our Achievements</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1200">
-                        <div class="single-counter"><i class="fas fa-user-md fa-xs"></i>
-                            <h2>540<span class="target">+</span></h2>
-                            <p>Expert Doctors</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1200">
-                        <div class="single-counter"><i class="fas fa-check-square fa-xs"></i>
-                            <h2>990<span class="target">+</span></h2>
-                            <p>Successful Story</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"
-                        data-aos-duration="1200">
-                        <div class="single-counter"><i class="fas fa-globe-americas fa-xs"></i>
-                            <h2>3500<span class="traget">+</span></h2>
-                            <p>Global Presence</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
-                        data-aos-duration="1200">
-                        <div class="single-counter"><i class="fas fa-id-badge fa-xs"></i>
-                            <h2>54<span class="traget">+</span></h2>
-                            <p>Experiences</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- <section class="hero bg-consultation">
+        <div class="container">
+            <div class="col-12">
+
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="bg-blues py-5">
         <div class="container-fluid ">
             <div class="container">
@@ -695,149 +716,178 @@
                 </div>
                 <div class="col-md-12 mt-4" id="prep-coach">
                     <div id="owl-prep-2" class="owl-carousel owl-theme">
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-1.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Lijo Varghese</h4>
-                                    <p class="text-uppercase m-0">PG diplomats in Herbology</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-2.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Rinal Kahar</h4>
-                                    <p class="text-uppercase m-0"> HOD of Ghod Dod Road branch</p>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-1.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Lijo Varghese</h4>
+                                        <p class="text-uppercase m-0">PG diplomats in Herbology</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-3.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Shefali Bodhana </h4>
-                                    <p class="text-uppercase m-0"> CFO of Ghod Dod Branch</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-4.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Riddhi Pagda</h4>
-                                    <p class="text-uppercase m-0">Head of Home Visit Module</p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-2.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Rinal Kahar</h4>
+                                        <p class="text-uppercase m-0"> HOD of Ghod Dod Road branch</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-5.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Asha Yadav </h4>
-                                    <p class="text-uppercase m-0">HOD of Ghod Dod branch</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-6.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Brijal Gadher </h4>
-                                    <p class="text-uppercase m-0"> HOD of home visit module</p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-3.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Shefali Bodhana </h4>
+                                        <p class="text-uppercase m-0"> CFO of Ghod Dod Branch</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-7.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Sharvari Joshi</h4>
-                                    <p class="text-uppercase m-0">Dry Needling </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-8.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Kinjal Gajera</h4>
-                                    <p class="text-uppercase m-0"> Yoga certificate course</p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-4.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Riddhi Pagda</h4>
+                                        <p class="text-uppercase m-0">Head of Home Visit Module</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-9.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Sahista Shaikh</h4>
-                                    <p class="text-uppercase m-0"> Dry Needling</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-3.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Ridhdhi Dabhoya </h4>
-                                    <p class="text-uppercase m-0"> HOD Adajan </p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-5.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Asha Yadav </h4>
+                                        <p class="text-uppercase m-0">HOD of Ghod Dod branch</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-4.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Shipra Naik </h4>
-                                    <p class="text-uppercase m-0"> HOD Adajan</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/team-member-5.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Kinjal Chovatiya </h4>
-                                    <p class="text-uppercase m-0"> Executive Coordinator Adajan</p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-6.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Brijal Gadher </h4>
+                                        <p class="text-uppercase m-0"> HOD of home visit module</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item m-1 m-md-3 mb-md-4 mb-3">
-                            <div class="team-item bg-color rounded overflow-hidden">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="./images/team-member/doctor-10.webp" alt="">
-                                </div>
-                                <div class="text-center py-4">
-                                    <h4 class="text-color">Dr. Komal Brahmbhatt </h4>
-                                    <p class="text-uppercase m-0"> CFO ADAJAN BRANCH</p>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-7.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Sharvari Joshi</h4>
+                                        <p class="text-uppercase m-0">Dry Needling </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-8.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Kinjal Gajera</h4>
+                                        <p class="text-uppercase m-0"> Yoga certificate course</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-9.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Sahista Shaikh</h4>
+                                        <p class="text-uppercase m-0"> Dry Needling</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/team-member-3.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Ridhdhi Dabhoya </h4>
+                                        <p class="text-uppercase m-0"> HOD Adajan </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/team-member-4.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Shipra Naik </h4>
+                                        <p class="text-uppercase m-0"> HOD Adajan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/team-member-5.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Kinjal Chovatiya </h4>
+                                        <p class="text-uppercase m-0"> Executive Coordinator Adajan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./programs/doctore-profile.html">
+                            <div class="item m-1 m-md-3 mb-md-4 mb-3">
+                                <div class="team-item bg-color rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="./images/team-member/doctor-10.webp" alt="">
+                                    </div>
+                                    <div class="text-center py-4">
+                                        <h4 class="text-color">Dr. Komal Brahmbhatt </h4>
+                                        <p class="text-uppercase m-0"> CFO ADAJAN BRANCH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -853,6 +903,359 @@
                     <div class="item"><img src="/images/achievement-1.jpeg" width="100%" alt=""></div>
                     <div class="item"><img src="/images/achievement-2.jpeg" width="100%" alt=""></div>
                     <div class="item"><img src="/images/achievement-3.jpeg" width="120%" alt=""></div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="demoo text-center">
+                    <h2> Our Achievement<span style="color: #52a955;margin: 0px;"> Stories</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="blog2 p-5 p-md-3 p-lg-5 d-none d-md-block" style="border-radius: 40px;">
+                            <div id="owl-review" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text text-black ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Jayshukh kakriya</h2>
+                                                    <p>As someone who was already a teacher of chemistry, I was
+                                                        pleasantly surprised by how much I enjoyed the Diploma in
+                                                        Nutrition course offered by FGIIT. The course not only gave me a
+                                                        deeper understanding of the importance of nutrition but also
+                                                        taught me how to apply...</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/Nl48IN2zU2M" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Margi Patel</h2>
+                                                    <p> I can confidently say that the program exceeded my expectations.
+                                                        The curriculum was well-designed
+                                                        and covered all aspects of nutrition, including the latest
+                                                        research and practical applications. The
+                                                        faculty was knowledgeable, supportive, and passionate about
+                                                        their subject...</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/cORjpHZJScY" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Shruti</h2>
+                                                    <p>I recently completed the Diploma in Nutrition course at FGIIT and
+                                                        I must say, it was an incredible
+                                                        experience! The faculty was knowledgeable and passionate about
+                                                        their subject, and the course content
+                                                        was comprehensive and practical. I feel confident in my ability
+                                                        to make a positive impact on people's
+                                                        health and wellness. Thank you, FGIIT!</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/R9RvPn7A_dE" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Richi </h2>
+                                                    <p>As a student of FGIIT, I highly recommend the Diploma in
+                                                        Nutrition Course. The curriculum is
+                                                        comprehensive and the faculty is knowledgeable and supportive. I
+                                                        feel confident in my abilities to pursue a
+                                                        career in nutrition thanks to the excellent education I received
+                                                        at FGIIT.</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/wawwUee08ls" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Rahul</h2>
+                                                    <p>
+                                                        As a former student of FGIIT, I highly recommend their Diploma
+                                                        In Personal Course. The
+                                                        program provided me with practical skills and knowledge that I
+                                                        still use today. The instructors
+                                                        were knowledgeable and supportive, and the campus had a great
+                                                        learning atmosphere.
+                                                    </p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/FwvVJq1lq9M" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-md-none">
+                            <div id="owl-review-1" class="owl-carousel owl-theme mt-4">
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text text-black ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Jayshukh kakriya</h2>
+                                                    <p>As someone who was already a teacher of chemistry, I was
+                                                        pleasantly surprised by how much I enjoyed the Diploma in
+                                                        Nutrition course offered by FGIIT. The course not only gave me a
+                                                        deeper understanding of the importance of nutrition but also
+                                                        taught me how to apply...</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/Nl48IN2zU2M" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Margi Patel</h2>
+                                                    <p> I can confidently say that the program exceeded my expectations.
+                                                        The curriculum was well-designed
+                                                        and covered all aspects of nutrition, including the latest
+                                                        research and practical applications. The
+                                                        faculty was knowledgeable, supportive, and passionate about
+                                                        their subject...</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/cORjpHZJScY" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Shruti</h2>
+                                                    <p>I recently completed the Diploma in Nutrition course at FGIIT and
+                                                        I must say, it was an incredible
+                                                        experience! The faculty was knowledgeable and passionate about
+                                                        their subject, and the course content
+                                                        was comprehensive and practical. I feel confident in my ability
+                                                        to make a positive impact on people's
+                                                        health and wellness. Thank you, FGIIT!</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/R9RvPn7A_dE" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Richi </h2>
+                                                    <p>As a student of FGIIT, I highly recommend the Diploma in
+                                                        Nutrition Course. The curriculum is
+                                                        comprehensive and the faculty is knowledgeable and supportive. I
+                                                        feel confident in my abilities to pursue a
+                                                        career in nutrition thanks to the excellent education I received
+                                                        at FGIIT.</p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/wawwUee08ls" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="review-box">
+                                                    <div>
+                                                        <img data-src=".images/youtube-thumbnail.webp" height="200px"
+                                                            width="100%" style="border-radius: 10px;"
+                                                            src="./images/youtube-thumbnail.webp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="review-box-text ml-4">
+                                                    <span>13 March 2023</span>
+                                                    <h2>Rahul</h2>
+                                                    <p>
+                                                        As a former student of FGIIT, I highly recommend their Diploma
+                                                        In Personal Course. The
+                                                        program provided me with practical skills and knowledge that I
+                                                        still use today. The instructors
+                                                        were knowledgeable and supportive, and the campus had a great
+                                                        learning atmosphere.
+                                                    </p>
+                                                    <div class="review-box-btn">
+                                                        <a href="https://youtu.be/FwvVJq1lq9M" data-flashy-type="video"
+                                                            class="custom clickof"><i class="fas fa-play"></i>
+                                                            &nbsp;Watch
+                                                            Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1165,9 +1568,58 @@
                     </div>
                 </div>
     </footer>
+
+    <div id="div_modal"></div>
+    <div class="modal fade" id="poupform">
+        <div class="modal-dialog wi-dt" role="document">
+            <div class="modal-content design-form bg-change bg-change-2">
+                <div class="modal-header justify-content-center p-0 border-bottom-0">
+                    <div class="text-center">
+                        <img src="../images/fwg/inquiry.webp" class="img-fluid mb-2 ml-2" width="40%"
+                            alt="Book Free Appointment">
+                        <h4> Start your Fitness Journey</h4>
+                    </div>
+                    <button type="button" class="closess closse-mobile p-0"
+                        style="background-color: transparent; border:none;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="p-0"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body mb-0 p-0">
+                    <div class="text-center d-block" id="formmi">
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-11 pl-0">
+                                <div class="input-group align-items-center">
+                                    <span><i class="far fa-user"></i></span>
+                                    <input type="text" class="form-control fr" placeholder="Enter Your name"
+                                        id="txt_bookFreeAppointmentWithBestDietitian_contact_name">
+                                </div>
+                                <div class="input-group align-items-center mb-3">
+                                    <span><i class="fas fa-phone-alt"></i></span>
+                                    <input type="number" class="form-control fr" placeholder="Enter Your contact Number"
+                                        id="txt_bookFreeAppointmentWithBestDietitian_contact_mobile">
+                                </div>
+                                <div class="input-group date-in align-items-center mb-3">
+                                    <span><i class="fas fa-comment-alt fa-flip-horizontal"></i></span>
+                                    <input type="text" class="form-control fr"
+                                        id="txt_bookFreeAppointmentWithBestDietitian_date"
+                                        placeholder="Enter Fitness Goal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="button">Inquiry Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./js/jquery.flashy.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -1181,7 +1633,27 @@
             emailjs.init("OqU-2F2WKPuPs68B9");
         })();
     </script>
+    <script>
+        function opneform() {
+            $('#poupform').modal('show');
+        }
+        function popupclose() {
+            $('#poupform').modal('hide');
+        }
 
+        function opneform() {
+            $('#myModal').modal('show');
+        }
+        setTimeout(function () {
+            $('#myModal').modal();
+        }, 30000);
+
+        $(window).scroll(function () {
+            var scrolled = $(window).scrollTop();
+            if (scrolled > 200) $('.btn-flot').fadeIn('slow');
+            if (scrolled < 200) $('.btn-flot').fadeOut('slow');
+        });
+    </script>
     <script>
         function sendMail() {
             var params = {
@@ -1229,7 +1701,63 @@
             $(".main").fadeIn(3000);
         });
     </script>
+
     <script>
+        $.fn.jQuerySimpleCounter = function (options) {
+            var settings = $.extend({
+                start: 0,
+                end: 100,
+                easing: 'swing',
+                duration: 400,
+                complete: ''
+            }, options);
+
+            var thisElement = $(this);
+
+            $({ count: settings.start }).animate({ count: settings.end }, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function () {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+
+
+        $('#number1').jQuerySimpleCounter({ end: 5500, duration: 5000 });
+        $('#number2').jQuerySimpleCounter({ end: 6000, duration: 5000 });
+        $('#number3').jQuerySimpleCounter({ end: 500, duration: 5000 });
+        $('#number4').jQuerySimpleCounter({ end: 500, duration: 5000 });
+    </script>
+    <script>
+        jQuery("#owl-review, #owl-review-1").owlCarousel({
+            autoplay: false,
+            responsiveClass: true,
+            autoHeight: true,
+            margin: 5,
+            autoplayTimeout: 1000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 1
+                },
+
+                1024: {
+                    items: 1
+                },
+
+                1366: {
+                    items: 1
+                }
+            }
+        });
         jQuery("#carousel").owlCarousel({
             autoplay: false,
             responsiveClass: true,
