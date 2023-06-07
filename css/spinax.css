@@ -1547,8 +1547,9 @@ a {
 }
 
 .design-form button:hover {
-  background-color: rgb(131, 133, 255);
+  background-color: transparent;
   color: #000000;
+  border-color: #000;
 }
 
 .design-form label {
@@ -1805,11 +1806,11 @@ header .active {
   margin-left: 45%;
 }
 
-.black-before iframe {
+.black-before-1 img {
   width: 760;
   height: 415;
   border-radius: 10px;
-  margin-left: 15%;
+  margin-left: 17%;
 }
 
 
@@ -1874,4 +1875,22 @@ header .active {
   background-color: #000;
   border: 2px solid#85f75b;
   color: #85f75b;
+}
+
+.newthing-2 {
+  background-color: #fff;
+  border-radius: 100%;
+  color: #5bb763;
+  position: relative;
+  display: flex;
+  margin-right: -25px;
+  line-height: 50px;
+  font-size: 18px !important;
+  align-items: center;
+  margin-left: 0;
+  height: 50px;
+  width: 50px;
+  bottom: 225px;
+  margin-left: 530px;
+  justify-content: center;
 }

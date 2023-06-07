@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>7 Essential Physiotherapy Exercises for Posture Correction - Spinex Global</title>
-    <meta name="Description" content="Discover seven essential physiotherapy exercises to correct your posture and relieve discomfort. Spinex Global offers expert physiotherapy services for pain management and physical well-being.">
-    <meta name="keywords" content=" physiotherapy exercises, posture correction, pain relief, Spinex Global, physiotherapy services">
+    <meta name="Description"
+        content="Discover seven essential physiotherapy exercises to correct your posture and relieve discomfort. Spinex Global offers expert physiotherapy services for pain management and physical well-being.">
+    <meta name="keywords"
+        content=" physiotherapy exercises, posture correction, pain relief, Spinex Global, physiotherapy services">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/webp" href="/images/spinex.webp">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
@@ -45,6 +47,9 @@
 </head>
 
 <body>
+    <div class="go-top">
+        <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
+    </div>
     <a class="float-button" target="_blank"
         href="https://api.whatsapp.com/send?phone=8000200063&text=Hello I want to know more about Spinex">
         <i class="fab fa-whatsapp"></i>
@@ -696,13 +701,46 @@
             </div>
         </div>
     </footer>
-    <script src="./js/jquery.flashy.min.js"></script>
-    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="./css/effect.css" rel="stylesheet">
-    <script src="./js/main.js"></script>
-    <link href="./css/flashy.min.css" rel="stylesheet">
-    <script src="./js/owl.carousel.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/js/jquery.flashy.min.js"></script>
+    <script src="/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="/css/flashy.min.css" rel="stylesheet">
+    <link href="/css/effect.css" rel="stylesheet">
+    <script src="/js/sweetalert2.js"></script>
+    <script src="/js/owl.carousel.js"></script>
 
+    <script>
+        $(function () {
+            //Scroll event
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 200) $('.go-top').fadeIn('slow');
+                if (scrolled < 200) $('.go-top').fadeOut('slow');
+            });
+
+            //Click event
+            $('.go-top').click(function () {
+                $("html, body").animate({ scrollTop: "0" }, 500);
+            });
+        });
+    </script>
+    <script>
+        function opneform() {
+            $('#poupform').modal('show');
+        }
+        function popupclose() {
+            $('#poupform').modal('hide');
+        }
+
+        $(window).scroll(function () {
+            var scrolled = $(window).scrollTop();
+            if (scrolled > 200) $('.btn-flot').fadeIn('slow');
+            if (scrolled < 200) $('.btn-flot').fadeOut('slow');
+        });
+    </script>
     <script>
         $(window).on('load', function () {
             $(".loder").fadeOut(3000);
