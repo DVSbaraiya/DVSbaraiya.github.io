@@ -202,7 +202,13 @@
   }
 
   .single-counter h2 {
-    font-size: 35px;
+    font-size: 25px;
+  }
+
+  .review-box img{
+    width: auto !important;
+    height: 250px;
+    margin-left: 29px;
   }
 
   .blog .video-btn a {
@@ -226,6 +232,41 @@
   .ply1 img {
     width: 100%;
     margin-right: 20px;
+    margin-left: 0px !important;
+  }
+  .about-border {
+    margin-top: 15px;
+  }
+
+  .go-top i {
+    padding: 9px 10px;
+    bottom: 6px;
+    font-size: 18px;
+  }
+  .go-top {
+    right: 8%;
+  }
+
+  .ddd{
+    height: 158px;
+  }
+
+  .newthing-3 {
+    background-color: #fff;
+    border-radius: 100%;
+    color: #5bb763;
+    position: relative;
+    display: flex;
+    margin-right: -25px;
+    line-height: 50px;
+    font-size: 18px !important;
+    align-items: center;
+    margin-left: 0;
+    height: 50px;
+    width: 50px;
+    bottom: 135px;
+    margin-left: 151px;
+    justify-content: center;
   }
 
   #fwg-owl .owl-nav span {
@@ -256,28 +297,39 @@
   }
 
   .review-ml {
-    margin-left: 18%;
-  }
-
-  .black-before iframe {
-    width: 350;
-    height: 255;
-    border-radius: 10px;
-    margin-left: 0%;
+    margin-left: 35%;
   }
 
   .fwg-affordenle-btn a {
-    padding: 5px 8px;
+    padding: 4px 5px;
     background-color: #52a955;
     border-radius: 5px;
     border: 2px solid transparent;
     color: #000;
     transition: .4s;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin-left: 300px;
+    margin-top: -7px;
   }
 
+  .newthing-2 {
+    background-color: #fff;
+    border-radius: 100%;
+    color: #5bb763;
+    position: relative;
+    display: flex;
+    margin-right: -25px;
+    line-height: 50px;
+    font-size: 18px !important;
+    align-items: center;
+    margin-left: 0;
+    height: 50px;
+    width: 50px;
+    bottom: 124px;
+    margin-left: 151px;
+    justify-content: center;
+  }
 
   .design-form {
     left: 22%;
@@ -355,6 +407,12 @@
   .program-button-5 p {
     margin-top: 162px;
     margin-left: 12px;
+  }
+
+  .black-before-1 img {
+    border-radius: 10px;
+    height: 200px;
+    margin-left: 0%;
   }
 
 }
@@ -500,7 +558,7 @@
   }
 
   #owl-prep-2 .owl-nav span {
-    top: 200;
+    top: 163;
   }
 
   /* .owl-nav span {
@@ -1204,5 +1262,3 @@
     margin-left: 12px;
   }
 }
-
-

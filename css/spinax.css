@@ -619,6 +619,10 @@ h4 {
   background-color: #66f56a;
 }
 
+.team-item p {
+  color: #66f56a;
+}
+
 a {
   text-decoration: none;
 }
@@ -939,6 +943,26 @@ h2 {
   margin-left: 200;
   justify-content: center;
 }
+
+.newthing-3 {
+  background-color: #fff;
+  border-radius: 100%;
+  color: #5bb763;
+  position: relative;
+  display: flex;
+  margin-right: -25px;
+  line-height: 50px;
+  font-size: 18px !important;
+  align-items: center;
+  margin-left: 0;
+  height: 50px;
+  width: 50px;
+  bottom: 168;
+  margin-left: 255;
+  justify-content: center;
+}
+
+
 
 .reviews {
   margin-top: 50px;
@@ -1873,7 +1897,7 @@ header .active {
 .go-top i:hover {
   transform: scale(1.1);
   background-color: #000;
-  border: 2px solid#85f75b;
+  border: 3px solid#85f75b;
   color: #85f75b;
 }
 
@@ -1893,4 +1917,84 @@ header .active {
   bottom: 225px;
   margin-left: 530px;
   justify-content: center;
+}
+
+
+.bg-light {
+  background-color: #efffea !important;
+}
+
+.about-border {
+  border: 4px solid #85f75b;
+  width: 100px;
+}
+
+.about-border h2 {
+  font-size: 18;
+}
+
+.achievement-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.achievement-block .inner-box {
+  position: relative;
+}
+
+.achievement-block .achievement-content {
+  position: relative;
+  min-height: 188px;
+  border-left: 1px solid #1e9322;
+  padding-left: 30px;
+}
+
+.achievement-block .achievement-content:before {
+  position: absolute;
+  content: '';
+  left: -200px;
+  bottom: -48px;
+  height: 1px;
+  right: -200px;
+  background-color: #1e9322;
+}
+
+.achievement-block h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #000;
+}
+
+.achievement-content img {
+  width: 50px !important;
+  margin-bottom: 5px;
+}
+
+.achievement-block .text {
+  color: rgb(115, 116, 125);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+
+.achievement-block .year {
+  position: relative;
+  font-weight: 600;
+  font-size: 26px;
+  color: #000;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.achievement-block .year:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #1e9322;
 }
