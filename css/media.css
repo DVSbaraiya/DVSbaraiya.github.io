@@ -244,11 +244,12 @@
     font-size: 18px;
   }
   .go-top {
-    right: 8%;
+    right: 9%;
   }
 
   .ddd{
     height: 158px;
+    width: 349px;
   }
 
   .newthing-3 {
@@ -351,7 +352,10 @@
 
   .single-counter {
     margin-left: 0px;
-    width: 190px;
+    width: 160px;
+  }
+  .single-counter p{
+    font-size: 12px;
   }
 
   #owl-review-1 .owl-nav span {
@@ -391,12 +395,13 @@
   .program-button-3,
   .program-button-4,
   .program-button-5 {
-    width: 371px;
+    width: 330px;
     height: 150px;
     border-radius: 10px 10px 10px 10px;
     color: #ffffff;
     font-size: 25px;
     font-weight: 600;
+    margin-right: 0px;
   }
 
   .program-button p,
