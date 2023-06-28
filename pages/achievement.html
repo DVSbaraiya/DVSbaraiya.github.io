@@ -102,7 +102,7 @@
             <ul class="nav inquiry-m">
                 <li class="nav-item">
                     <a class="nav-link active phone-number font-weight-normal d-none d-md-block"
-                        href="tel:80002 00063">+9180002 00063</a>
+                    href="tel:8000200063">+91 8000200061 / 62 / 63 / 64</a>
                 </li>
                 <li class="mt-lg-1 d-none d-md-block">
                     <div class="fwg-affordenle-btn">
@@ -885,8 +885,8 @@
                     <div class="item"><img src="/images/achievement-3.jpeg" width="120%" alt=""></div>
                 </div>
             </div>
-        </div> 
-        
+        </div>
+
     </section>
     <section class="">
         <div class="bg-full-bd py-5" style="background-image: url(/images/contect.webp);background-attachment: local;">
@@ -1119,6 +1119,35 @@
         (function () {
             emailjs.init("OqU-2F2WKPuPs68B9");
         })();
+    </script>
+    <script>
+        $.fn.jQuerySimpleCounter = function (options) {
+            var settings = $.extend({
+                start: 0,
+                end: 100,
+                easing: 'swing',
+                duration: 400,
+                complete: ''
+            }, options);
+
+            var thisElement = $(this);
+
+            $({ count: settings.start }).animate({ count: settings.end }, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function () {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+
+
+        $('#number1').jQuerySimpleCounter({ end: 60, duration: 10000 });
+        $('#number2').jQuerySimpleCounter({ end: 400000, duration: 10000 });
+        $('#number3').jQuerySimpleCounter({ end: 200000, duration: 10000 });
+        $('#number4').jQuerySimpleCounter({ end: 27, duration: 10000 });
     </script>
     <script>
         function opneform() {
