@@ -500,6 +500,7 @@ h4 {
 
 .team-item .team-img img {
   transition: all 0.5s;
+  border-radius: 18px 18px 0 0;
 }
 
 .team-social {
@@ -1129,6 +1130,7 @@ a {
 .bg-color {
   background-color: #000000;
   width: 350px;
+  border-radius: 18px !important;
 }
 
 .blog {
@@ -2247,4 +2249,8 @@ ul.social li a {
   bottom: 168px;
   margin-left: 233px;
   justify-content: center;
+}
+
+.number-class{
+  display: none;
 }

@@ -3,6 +3,14 @@
     height: auto;
   }
 
+
+  .call-button img{
+    margin-left: 100px;
+    margin-top: -32px;
+    font-size: 20px;
+    width: 35px;
+  }
+
   .main {
     height: 60px;
   }
@@ -19,6 +27,14 @@
 
   .describe p {
     margin-bottom: 0;
+  }
+
+  .number-class{
+    display: block;
+  }
+
+  .number-class-2{
+    display: none;
   }
 
   .lang ul li {
@@ -294,10 +310,10 @@
     padding-left: 15px;
   }
 
-  .bb{
+  .bb {
     padding-top: 91px !important;
   }
-  
+
   #myvideo {
     width: auto;
     min-height: 445px;
