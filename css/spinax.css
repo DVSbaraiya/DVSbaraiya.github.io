@@ -2251,6 +2251,23 @@ ul.social li a {
   justify-content: center;
 }
 
-.number-class{
+.number-class {
   display: none;
+}
+
+
+#number1 {
+  margin-left: 30px;
+}
+
+#number2 {
+  margin-left: 70px;
+}
+
+#number3 {
+  margin-left: 30px;
+}
+
+#number4 {
+  margin-left: 70px;
 }
