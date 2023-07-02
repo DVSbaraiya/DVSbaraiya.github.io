@@ -3,12 +3,15 @@
     height: auto;
   }
 
-
-  .call-button img{
+  .call-button img {
     margin-left: 100px;
     margin-top: -32px;
     font-size: 20px;
     width: 35px;
+  }
+
+  .main-vidoe-2 video {
+    right: 30 !important;
   }
 
   .main {
@@ -29,11 +32,11 @@
     margin-bottom: 0;
   }
 
-  .number-class{
+  .number-class {
     display: block;
   }
 
-  .number-class-2{
+  .number-class-2 {
     display: none;
   }
 
@@ -1330,4 +1333,20 @@
     margin-top: 162px;
     margin-left: 12px;
   }
+}
+
+#number1 {
+  margin-left: 30px;
+}
+
+#number2 {
+  margin-left: 70px;
+}
+
+#number3 {
+  margin-left: 30px;
+}
+
+#number4 {
+  margin-left: 70px;
 }

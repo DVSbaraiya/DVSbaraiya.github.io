@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.theme.css">
     <link rel="stylesheet" type="text/css" href="./css/wow.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
@@ -167,7 +168,12 @@
     <section class="hero wow animate__animated animate__fadeIn">
         <div class="w-100 bb" style="padding-top: 300px;padding-bottom: 300px;">
             <div class="farm-video">
-                <video id="myvideo" autoplay muted loop>
+                <video id="myvideo" class="d-block d-md-none" autoplay muted loop>
+                    <source src="./images/work/pexels-martina-tomšič-4204438-1920x1080-30fps.mp4">
+                </video>
+            </div>
+            <div class="farm-video main-vidoe-2">
+                <video id="myvideo" class="d-block d-md-none" autoplay muted loop>
                     <source src="./images/work/pexels-martina-tomšič-4204438-1920x1080-30fps.mp4">
                 </video>
             </div>
@@ -183,25 +189,37 @@
                 <div class="row justify-content-center wow animate__animated animate__fadeIn" data-wow-delay="500ms">
                     <div class="col-lg-3 col-6 pb-5">
                         <div class="single-counter"><i class="fas fa-globe-americas fa-xs"></i>
-                            <h2 id="number3" data-toggle="counter-up">2 Lakhs<span class="traget">+</span></h2>
+                            <div class="d-flex">
+                                <h2 id="number1" data-toggle="counter-up">200000</h2> <span
+                                    style="font-size: 40px;margin-top: -13px;">+</span>
+                            </div>
                             <p>Surgeries avoided</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 pb-5">
                         <div class="single-counter"><i class="fas fa-user-md fa-xs"></i>
-                            <h2 id="number1" data-toggle="counter-up">60<span class="target">+</span></h2>
+                            <div class="d-flex">
+                                <h2 id="number2" data-toggle="counter-up">60</h2> <span
+                                    style="font-size: 40px;margin-top: -13px;">+</span>
+                            </div>
                             <p>Expert Doctors</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 pb-5">
                         <div class="single-counter"><i class="fas fa-procedures fa-xs"></i>
-                            <h2 id="number2" data-toggle="counter-up">4 Lakhs<span class="target">+</span></h2>
+                            <div class="d-flex">
+                                <h2 id="number3" data-toggle="counter-up">4 Lakhs</h2> <span
+                                    style="font-size: 40px;margin-top: -13px;">+</span>
+                            </div>
                             <p>Total patients</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 pb-5">
                         <div class="single-counter"><i class="fas fa-calendar-alt fa-xs"></i>
-                            <h2 id="number4" data-toggle="counter-up">27<span class="traget">+</span></h2>
+                            <div class="d-flex">
+                                <h2 id="number4" data-toggle="counter-up">27</h2> <span
+                                    style="font-size: 40px;margin-top: -13px;">+</span>
+                            </div>
                             <p>Years Of Experiences</p>
                         </div>
                     </div>
@@ -1926,10 +1944,11 @@
         };
 
 
-        $('#number1').jQuerySimpleCounter({ end: 60, duration: 9000 });
-        $('#number2').jQuerySimpleCounter({ end: 400000, duration: 9000 });
+        $('#number2').jQuerySimpleCounter({ end: 60, duration: 9000 });
+        $('#number1').jQuerySimpleCounter({ end: 400000, duration: 9000 });
         $('#number3').jQuerySimpleCounter({ end: 200000, duration: 9000 });
         $('#number4').jQuerySimpleCounter({ end: 27, duration: 9000 });
+
     </script>
     <script>
         jQuery("#owl-review, #owl-review-1").owlCarousel({
