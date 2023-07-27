@@ -861,18 +861,30 @@
     <script>
         $(document).ready(function () {
             $("#review-1").click(function () {
-                $("#review-2").addClass("btn-branch-active");
-                $("#review-4, #review-1, #review-3").removeClass("btn-branch-active");
+                $("#review-1").addClass("btn-branch-active");
+                $("#review-2, #review-3, #review-4").removeClass("btn-branch-active");
                 $(".review-1").show();
                 $(".review-2, .review-3, .review-4").hide();
             });
             $("#review-2").click(function () {
-                $("#review-4").addClass("btn-branch-active");
-                $("#review-2, #review-1, #review-3").removeClass("btn-branch-active");
+                $("#review-2").addClass("btn-branch-active");
+                $("#review-1, #review-3, #review-4").removeClass("btn-branch-active");
                 $(".review-2").show();
                 $(".review-1, .review-3, .review-4").hide();
             });
-        })
+            $("#review-3").click(function () {
+                $("#review-3").addClass("btn-branch-active");
+                $("#review-1, #review-2, #review-4").removeClass("btn-branch-active");
+                $(".review-3").show();
+                $(".review-1, .review-2, .review-4").hide();
+            });
+            $("#review-4").click(function () {
+                $("#review-4").addClass("btn-branch-active");
+                $("#review-1, #review-2, #review-3").removeClass("btn-branch-active");
+                $(".review-4").show();
+                $(".review-1, .review-2, .review-3").hide();
+            });
+        });
     </script>
     <script>
         $(function () {

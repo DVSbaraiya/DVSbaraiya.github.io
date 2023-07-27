@@ -269,6 +269,14 @@
                                     </div>
                                 </div>
                             </a>
+                            <a href="javascript:void(0);" id="review-5">
+                                <div class="main-round-2">
+                                    <div class="small-round-2">
+                                        <img data-src="/images/new.jpeg" src="/images/new.jpeg"
+                                            alt="reviews" class="lazy" width="100%">
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -323,6 +331,20 @@
                                 style="border-radius: 10px;" alt="client journey" src="/images/backpaine-thubnil.png">
                             <div class="video-btn">
                                 <a href="https://youtu.be/l72fd7BmA80" allow="accelerometer; autoplay;"
+                                    data-flashy-type="video" class="custom">
+                                    <span class="newthing-2"><i class="fas fa-play"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-5 mt-md-5" style="display: none;">
+                    <div class="video-img mt-md-0 mt-4">
+                        <div class="ply1 black-before-1 mb-lg-5">
+                            <img class="" data-src="/images/reviwe-thubnil-2.webp" width="95%"
+                                style="border-radius: 10px;" alt="client journey" src="/images/review-min-img (2).png">
+                            <div class="video-btn">
+                                <a href="https://youtube.com/shorts/rNCai0IIjUU" allow="accelerometer; autoplay;"
                                     data-flashy-type="video" class="custom">
                                     <span class="newthing-2"><i class="fas fa-play"></i></span>
                                 </a>
@@ -1816,34 +1838,40 @@
             emailjs.init("OqU-2F2WKPuPs68B9");
         })();
     </script>
-    <script>
-        $(document).ready(function () {
-            $("#review-1").click(function () {
-                $("#review-2").addClass("btn-branch-active");
-                $("#review-4, #review-1, #review-3").removeClass("btn-branch-active");
-                $(".review-1").show();
-                $(".review-2, .review-3, .review-4").hide();
-            });
-            $("#review-2").click(function () {
-                $("#review-2").addClass("btn-branch-active");
-                $("#review-2, #review-1, #review-3").removeClass("btn-branch-active");
-                $(".review-2").show();
-                $(".review-1, .review-3, .review-4").hide();
-            });
-            $("#review-3").click(function () {
-                $("#review-3").addClass("btn-branch-active");
-                $("#review-2, #review-1, #review-4").removeClass("btn-branch-active");
-                $(".review-2").show();
-                $(".review-1, .review-3, .review-4").hide();
-            });
-            $("#review-4").click(function () {
-                $("#review-4").addClass("btn-branch-active");
-                $("#review-2, #review-1, #review-3").removeClass("btn-branch-active");
-                $(".review-2").show();
-                $(".review-1, .review-3, .review-4").hide();
-            });
-        })
-    </script>
+ <script>
+    $(document).ready(function () {
+        $("#review-1").click(function () {
+            $("#review-1").addClass("btn-branch-active");
+            $("#review-2, #review-3, #review-5").removeClass("btn-branch-active");
+            $(".review-1").show();
+            $(".review-2, .review-3, .review-4, .review-5").hide();
+        });
+        $("#review-2").click(function () {
+            $("#review-2").addClass("btn-branch-active");
+            $("#review-1, #review-3, #review-5").removeClass("btn-branch-active");
+            $(".review-2").show();
+            $(".review-1, .review-3, .review-4, .review-5").hide();
+        });
+        $("#review-3").click(function () {
+            $("#review-3").addClass("btn-branch-active");
+            $("#review-1, #review-2, #review-5").removeClass("btn-branch-active");
+            $(".review-3").show();
+            $(".review-1, .review-2, .review-4, .review-5").hide();
+        });
+        $("#review-4").click(function () {
+            $("#review-4").addClass("btn-branch-active");
+            $("#review-1, #review-2, #review-3, #review-5").removeClass("btn-branch-active");
+            $(".review-4").show();
+            $(".review-1, .review-2, .review-3, .review-5").hide();
+        });
+        $("#review-5").click(function () {
+            $("#review-5").addClass("btn-branch-active");
+            $("#review-1, #review-2, #review-3, #review-4").removeClass("btn-branch-active");
+            $(".review-5").show();
+            $(".review-1, .review-2, .review-3, .review-4").hide();
+        });
+    });
+</script>
     <script>
         function opneform() {
             $('#poupform').modal('show');
