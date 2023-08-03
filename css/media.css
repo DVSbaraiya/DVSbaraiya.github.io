@@ -13,15 +13,15 @@
   #number1 {
     margin-left: 0px;
   }
-  
+
   #number2 {
     margin-left: 30px;
   }
-  
+
   #number3 {
     margin-left: 0px;
   }
-  
+
   #number4 {
     margin-left: 30px;
   }
@@ -211,6 +211,11 @@
     padding-right: 70px;
     font-size: 25px;
   }
+
+  .newthing-1 {
+    bottom: 124px !important;
+    margin-left: 125px !important;
+ }
 
   .newthing {
     background-color: #fff;
@@ -446,18 +451,93 @@
 
 
   .main-round-2 {
-    margin: 10;
+    margin: 13px;
   }
 
   .small-round-2 {
     background: #a9f8ad;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+
+  .float-button-1 {
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(0deg);
+    bottom: 70%;
+    right: -5px;
+    color: #fff;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 14px;
+    width: 40px !important;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .float-button-2 {
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(0deg);
+    bottom: 64%;
+    right: -5px;
+    color: #fff;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 14px;
+    width: 40px !important;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .float-button-3 {
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(0deg);
+    bottom: 58%;
+    right: -5px;
+    color: #fff;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 14px;
+    width: 40px !important;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .float-button-4 {
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(0deg);
+    bottom: 52%;
+    right: -5px;
+    color: #fff;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 14px;
+    width: 40px !important;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .float-button-5 {
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(0deg);
+    bottom: 46%;
+    right: -5px;
+    color: #fff;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 14px;
+    width: 40px !important;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
   }
 
   .program-button,
@@ -1346,4 +1426,3 @@
     margin-left: 12px;
   }
 }
-
