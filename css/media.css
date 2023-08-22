@@ -194,7 +194,7 @@
   }
 
   #achievement-2 .owl-nav span {
-    top: 100;
+    top: 69;
   }
 
   .f-img-bg img {
@@ -215,7 +215,7 @@
   .newthing-1 {
     bottom: 124px !important;
     margin-left: 125px !important;
- }
+  }
 
   .newthing {
     background-color: #fff;
@@ -403,9 +403,9 @@
   }
 
   .design-form {
-    left: 22%;
-    width: 60%;
-    top: 16%;
+    left: 5%;
+    width: 90%;
+    top: 114px;
     height: auto;
   }
 
