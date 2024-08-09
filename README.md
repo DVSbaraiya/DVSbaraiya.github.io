@@ -1,1 +1,0 @@
-# Divyesh Baraiya Resume
