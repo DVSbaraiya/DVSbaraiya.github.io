@@ -3191,3 +3191,275 @@ html.is-animating .fade-left {
 
 
 /*# sourceMappingURL=style.css.map */
+
+.whatsapp-btn { 
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+.whatsapp-btn:hover { 
+    background: #1ebc5a; 
+}
+
+.call-btn { 
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    background: #5e63fb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+.call-btn:hover { 
+    background: #4a50ff; 
+}
+
+.card-cafe {
+    text-align: center;
+}
+
+.cafe-img{
+    width: 50px;
+    height: 50px;
+}
+
+.card-cafe-content h4{
+    margin-top: 10px;
+    color: #5e63fb;
+}
+
+.card-cafe-content p{
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.cafe-div-line{
+    width: 10%;
+    height: 5px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #5e63fb !important;
+}
+
+.benefits-card-content ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.benefits-card-content li{
+    padding: 5px 0px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.benefits-card-content li i{
+    color: #5e63fb;
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.benefits-image img {
+    border-radius: 10px;
+}
+
+.benefits-card-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #5e63fb;
+    margin-bottom: 5px;
+}
+
+.benefits-card-title{
+    font-size: 24px;
+    font-weight: 600;   
+    margin-bottom: 15px;
+}
+
+.cafe-website-img{
+    overflow: auto;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+}
+
+.card-website-content h4{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    color: #5e63fb;
+}
+
+.card-website-content a{
+   color: #fff;
+   transition: 0.8s ease-in-out;
+}
+
+.card-website-content a:hover{
+   color: #5e63fb;
+}
+
+.card-cafe-website{
+    cursor: pointer;
+}
+
+.card-cafe-website:hover .card-website-content a{
+   color: #5e63fb;
+}
+
+.cafe-website-img img{
+   transform: scale(1);
+   transition: 0.8s ease-in-out;
+}
+
+.card-cafe-website:hover .cafe-website-img img{
+   transform: scale(1.06);
+}
+
+.pricing-plans {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 25px;
+}
+
+.pricing-card {
+  --col: #5e63fb;
+  position: relative;
+  min-width: 360px;
+  padding: 32px;
+  padding-bottom: 96px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  border-color: #5e63fb;
+  background-color: #26262680;
+  box-shadow: 0 0 32px #171717;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: var(--col);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .features li {
+  padding-bottom: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 10px;
+}
+
+.pricing-card .cta-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  color: #fff!important;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pricing-card .cta-btn:hover{
+    color: #5e63fb!important;
+    background: #fff;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:567px) {
+    .benefits-card-content li{
+        font-size: 14px;
+    }
+
+    .benefits-image{
+        padding-top: 15px;
+    }
+
+    .pricing-card .price{
+        font-size: 40px;
+    }
+
+    .cafe-main-div .art-app .art-app-wrapper .art-app-container .art-content{
+        padding-top: 10px;
+    }
+}
