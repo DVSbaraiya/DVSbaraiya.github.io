@@ -1,0 +1,424 @@
+.btn-contact-us{
+    background-color: #DA9F5B;
+    color: #000;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #da9f5b;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-cafe{
+    background-color: #da9f5b;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #7d4533;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+.cafe-img{
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+.cafe-img img{
+    filter: invert(1);
+}
+
+.card-cafe-content h4{
+    font-weight: 700!important;
+    color: #33211d;
+    font-size: 22px;
+}
+
+.card-cafe-content p{
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.benefits-card-content h3{
+    color: #33211d;
+}
+
+.benefits-card-content ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.benefits-card-content ul li{
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 12px;
+    font-size: 16px;
+    transition: .2s ease-in-out;
+}
+
+.benefits-card-content ul li:hover{
+    color: #33211d;
+    transform: scale(1.01);
+}
+
+.benefits-card-content ul li i{
+    margin-right: 5px;
+    color: #DA9F5B;
+}
+
+.benefits-card-content a{
+    border-radius: 5px;
+    background-color: #DA9F5B;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.benefits-card-content a i{
+    margin-right: 6px;
+}
+
+.benefits-card-content a:hover{
+    background-color: #33211d;
+    color: #fff;
+}
+
+.card-cafe-website{
+    cursor: pointer;
+    background-color: #da9f5b;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #7d4533;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+.cafe-website-img {
+    overflow: auto;
+    height: 300px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.card-website-content{
+    margin-top: 10px;
+}
+
+.card-website-content h4 a{
+    color: #33211d;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.card-cafe-website:hover .card-website-content a{
+   color: #fff;
+}
+
+.cafe-website-img img{
+   transform: scale(1);
+   transition: 0.8s ease-in-out;
+}
+
+.card-cafe-website:hover .cafe-website-img img{
+   transform: scale(1.06);
+}
+
+.btn-contact-us:hover{
+    background-color: #000;
+    color: #DA9F5B;
+    text-decoration: none;
+}
+
+#blog-carousel .carousel-item{
+    height: 500px;
+}
+
+/* Customize the scrollbar for the .cafe-website-img */
+.cafe-website-img::-webkit-scrollbar {
+  width: 8px;  /* Vertical scrollbar width */
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+/* Customize the scrollbar track */
+.cafe-website-img::-webkit-scrollbar-track {
+  background: #ddd;  /* Light grey track */
+  border-radius: 10px;
+}
+
+/* Customize the scrollbar thumb */
+.cafe-website-img::-webkit-scrollbar-thumb {
+  background: #7d4533;  /* Grey thumb */
+  border-radius: 10px;
+}
+
+/* Change thumb color on hover */
+.cafe-website-img::-webkit-scrollbar-thumb:hover {
+  background: #7d4533;  /* Darker grey on hover */
+}
+/* Optional: Style the corner where both scrollbars meet */
+.cafe-website-img::-webkit-scrollbar-corner {
+  background: #ddd;
+}
+
+.pricing-plans {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.pricing-card {
+  position: relative;
+  min-width: 340px;
+  padding: 20px;
+  padding-bottom: 96px;
+  border-radius: 4px;
+  background: #33211d;
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+}
+
+.premium{
+  background-color: #1a1a1a;
+}
+
+.standard{
+  background-color: #1a1a1a;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 0 2px #171717;
+  transform: translateY(-2px) scale(1.01);
+  transition: all 0.5s ease;
+  background: #33211d;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: #DA9F5B;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .features li {
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 10px;
+}
+
+.pricing-card .cta-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #da9f5b;
+    color: #33211d !important;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.pricing-card .cta-btn:hover{
+    color: #DA9F5B!important;
+    background: #7d4533;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #33211d;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7d4533;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #33211d;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #33211d;
+  border: 1px solid #33211d;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #7d4533;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin: 1.5em 0;
+}
+
+.whatsapp-btn { 
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+.whatsapp-btn:hover { 
+    background: #1ebc5a; 
+}
+
+.call-btn { 
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    background: #33211d;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+.call-btn:hover { 
+    background: #472f29; 
+}
+
+@media only screen and (max-width:567px) {
+    #blog-carousel .carousel-item{
+    height: 100%;
+}
+}
