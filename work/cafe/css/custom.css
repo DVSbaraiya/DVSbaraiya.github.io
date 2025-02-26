@@ -404,7 +404,7 @@
     position: fixed;
     bottom: 30px;
     left: 20px;
-    background: #33211d;
+    background: #DA9F5B;
     color: white;
     padding: 11px 18px;
     border-radius: 50%;
@@ -418,7 +418,51 @@
 }
 
 @media only screen and (max-width:567px) {
-    #blog-carousel .carousel-item{
+  #blog-carousel .carousel-item{
     height: 100%;
-}
+  }
+  #blog-carousel img{
+    width: 130%!important;
+  }
+  .btn-contact-us{
+    font-size: 14px;
+    padding: 8px;
+  }
+  .section-title::after{
+    height: 60px;
+  }
+  .section-title{
+    padding: 70px 0 10px 0px;
+  }
+  .section-title h4{
+    font-size: 14px;
+  }
+  .display-4{
+    font-size: 28px;
+  }
+  .card-cafe{
+    margin-bottom: 20px;
+  }
+  .card-cafe-website{
+    margin-bottom: 20px;
+  }
+  .pricing-card .price{
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .pricing-card ul{
+    margin-bottom: 10px!important;
+  }
+  .pricing-card .cta-btn{
+    width: 180px;
+    padding: 8px;
+    font-size: 18px;
+  }
+  .accordion button{
+    font-size: 16px;
+  }
+  .accordion .accordion-content p{
+    margin: 0.75em 0;
+    font-size: 14px;
+  }
 }
