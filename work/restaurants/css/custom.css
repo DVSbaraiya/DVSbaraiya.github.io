@@ -1,9 +1,9 @@
 .btn-contact-us{
-    background-color: #ff8344;
+    background-color: #FFD700;
     color: #000;
     padding: 10px;
     transition: 0.5s ease-in-out;
-    border: 2px solid #ff8344;
+    border: 2px solid #FFD700;
     font-weight: 600;
     margin-top: 20px;
     border-radius: 5px;
@@ -11,9 +11,9 @@
 }
 
 .card-cafe{
-    background-color: #ff8344;
+    background-color: #FFD700;
     border-radius: 10px;
-    box-shadow: 2px 5px 8px #7d4533;
+    box-shadow: 2px 5px 8px #bb9f00;
     padding: 8px 15px;
     text-align: center;
 }
@@ -64,12 +64,12 @@
 
 .benefits-card-content ul li i{
     margin-right: 5px;
-    color: #ff8344;
+    color: #FFD700;
 }
 
 .benefits-card-content a{
     border-radius: 5px;
-    background-color: #ff8344;
+    background-color: #FFD700;
     color: #000;
     border: none;
     padding: 10px 16px;
@@ -89,9 +89,9 @@
 
 .card-cafe-website{
     cursor: pointer;
-    background-color: #ff8344;
+    background-color: #FFD700;
     border-radius: 10px;
-    box-shadow: 2px 5px 8px #7d4533;
+    box-shadow: 2px 5px 8px #bb9f00;
     padding: 8px 15px;
     text-align: center;
 }
@@ -129,7 +129,7 @@
 
 .btn-contact-us:hover{
     background-color: #000;
-    color: #ff8344;
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -151,13 +151,13 @@
 
 /* Customize the scrollbar thumb */
 .cafe-website-img::-webkit-scrollbar-thumb {
-  background: #7d4533;  /* Grey thumb */
+  background: #bb9f00;  /* Grey thumb */
   border-radius: 10px;
 }
 
 /* Change thumb color on hover */
 .cafe-website-img::-webkit-scrollbar-thumb:hover {
-  background: #7d4533;  /* Darker grey on hover */
+  background: #bb9f00;  /* Darker grey on hover */
 }
 /* Optional: Style the corner where both scrollbars meet */
 .cafe-website-img::-webkit-scrollbar-corner {
@@ -180,24 +180,24 @@
   padding: 20px;
   padding-bottom: 96px;
   border-radius: 4px;
-  background: #33211d;
+  background: #000;
   box-shadow: 0 0 32px transparent;
   text-align: center;
 }
 
-.premium{
+/* .premium{
   background-color: #1a1a1a;
 }
 
 .standard{
   background-color: #1a1a1a;
-}
+} */
 
 .pricing-card:hover {
   box-shadow: 0 0 2px #171717;
   transform: translateY(-2px) scale(1.01);
   transition: all 0.5s ease;
-  background: #33211d;
+  background: #262000;
 }
 
 .pricing-card > *:not(:last-child) {
@@ -225,7 +225,7 @@
 
 .pricing-card .price {
   position: relative;
-  color: #ff8344;
+  color: #FFD700;
   font-size: 60px;
   font-weight: bold;
 }
@@ -266,7 +266,7 @@
     width: 200px;
     padding: 12px;
     border-radius: 4px;
-    background-color: #ff8344;
+    background-color: #FFD700;
     color: #33211d !important;
     font-size: 20px;
     font-weight: bold;
@@ -276,8 +276,9 @@
 }
 
 .pricing-card .cta-btn:hover{
-    color: #ff8344!important;
-    background: #7d4533;
+    color:#FFD700 !important;
+    background: #000000;
+    border: 1px solid #FFD700;
 }
 
 .pricing-card .cta-btn:active {
@@ -300,7 +301,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7d4533;
+  color: #bb9f00;
   font-size: 1.15rem;
   font-weight: 600;
   border: none;
@@ -358,7 +359,7 @@
 }
 
 .accordion button[aria-expanded='true'] {
-  color: #7d4533;
+  color: #bb9f00;
 }
 .accordion button[aria-expanded='true'] .icon::after {
   width: 0;
@@ -404,7 +405,7 @@
     position: fixed;
     bottom: 30px;
     left: 20px;
-    background: #ff8344;
+    background: #FFD700;
     color: white;
     padding: 11px 18px;
     border-radius: 50%;
