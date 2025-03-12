@@ -11,7 +11,7 @@
 }
 
 .card-cafe{
-    background-color: #a855f7;
+    background-color: #dab4ff;
     border-radius: 10px;
     box-shadow: 2px 5px 8px #2b005496;
     padding: 8px 15px;
@@ -25,12 +25,12 @@
 }
 
 .cafe-img img{
-    filter: invert(1);
+    filter: brightness(0);
 }
 
 .card-cafe-content h4{
     font-weight: 700!important;
-    color: #333333;
+    color: #8300ff;
     font-size: 22px;
 }
 
@@ -89,7 +89,7 @@
 
 .card-cafe-website{
     cursor: pointer;
-    background-color: #a855f7;
+    background-color: #d2a4ff;
     border-radius: 10px;
     box-shadow: 2px 5px 8px #2b005496;
     padding: 8px 15px;
@@ -108,7 +108,7 @@
 }
 
 .card-website-content h4 a{
-    color: #333333;
+    color: #8302ff;
     margin-top: 10px;
     text-decoration: none;
     transition: .4s ease-in-out;
